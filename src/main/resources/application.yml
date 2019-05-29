@@ -1,14 +1,19 @@
-  spring:
-    jpa :
-      database  : MYSQL
-      show-sql  : true
-      hibernate :
-        ddl-auto: update
-    datasource  :
-      drivername: com.mysql.jdbc.Driver
-      url       : jdbc:mysql://localhost/employee
-      username  : root
-      password  : root
+spring:
+  datasource  :
+    drivername: org.postgresql.Driver
+    url       : jdbc:postgresql://localhost:5432/cyber_bullying
+    username  : postgres
+    password  : password
 
-  server:
-    port : 8181
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+server:
+  port : 8181

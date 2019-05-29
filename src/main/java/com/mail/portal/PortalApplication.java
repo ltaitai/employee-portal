@@ -1,4 +1,4 @@
-package com.employee.portal;
+package com.mail.portal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
